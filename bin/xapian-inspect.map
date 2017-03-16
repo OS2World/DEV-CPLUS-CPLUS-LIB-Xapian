@@ -1,0 +1,466 @@
+** EXPERIMENTAL (HLL) ** Open Watcom Linker Version 1.6beta1 Limited Availability
+Portions Copyright (c) 1985-2002 Sybase, Inc. All Rights Reserved.
+Created on:       07/11/17 08:37:18
+Executable Image: bin/xapian-inspect.exe
+creating an OS/2 EMX executable
+
+
+                        +------------+
+                        |   Groups   |
+                        +------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+CGROUP                          0001:00000000        0001b710
+DGROUP                          0002:00000000        00001ec0
+
+
+
+                        +--------------+
+                        |   Segments   |
+                        +--------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+TEXT32                 CODE           CGROUP         0001:00000000   0001b710
+________TEXT           CODE           CGROUP         0001:0001b710   00000000
+DATA32                 DATA           DGROUP         0002:00000000   00001d20
+SET1__os2dll           DATA           DGROUP         0002:00001d20   00000004
+SET2__os2dll           DATA           DGROUP         0002:00001d24   00000000
+SET3__os2dll           DATA           DGROUP         0002:00001d24   00000004
+SET1___CTOR_LIST__     DATA           DGROUP         0002:00001d28   00000004
+SET2___CTOR_LIST__     DATA           DGROUP         0002:00001d2c   00000008
+SET3___CTOR_LIST__     DATA           DGROUP         0002:00001d34   00000004
+SET1___DTOR_LIST__     DATA           DGROUP         0002:00001d38   00000004
+SET2___DTOR_LIST__     DATA           DGROUP         0002:00001d3c   00000004
+SET3___DTOR_LIST__     DATA           DGROUP         0002:00001d40   00000004
+SET1___crtinit1__      DATA           DGROUP         0002:00001d44   00000004
+SET2___crtinit1__      DATA           DGROUP         0002:00001d48   00000000
+SET3___crtinit1__      DATA           DGROUP         0002:00001d48   00000004
+SET1___crtexit1__      DATA           DGROUP         0002:00001d4c   00000004
+SET2___crtexit1__      DATA           DGROUP         0002:00001d50   00000000
+SET3___crtexit1__      DATA           DGROUP         0002:00001d50   00000004
+SET1___eh_frame__      DATA           DGROUP         0002:00001d54   00000004
+SET2___eh_frame__      DATA           DGROUP         0002:00001d58   00000024
+SET3___eh_frame__      DATA           DGROUP         0002:00001d7c   00000004
+SET1___eh_init__       DATA           DGROUP         0002:00001d80   00000004
+SET2___eh_init__       DATA           DGROUP         0002:00001d84   00000004
+SET3___eh_init__       DATA           DGROUP         0002:00001d88   00000004
+SET1___eh_term__       DATA           DGROUP         0002:00001d8c   00000004
+SET2___eh_term__       DATA           DGROUP         0002:00001d90   00000004
+SET3___eh_term__       DATA           DGROUP         0002:00001d94   00000004
+SET1___fork_parent1__  DATA           DGROUP         0002:00001d98   00000004
+SET2___fork_parent1__  DATA           DGROUP         0002:00001d9c   00000000
+SET3___fork_parent1__  DATA           DGROUP         0002:00001d9c   00000004
+SET1___fork_child1__   DATA           DGROUP         0002:00001da0   00000004
+SET2___fork_child1__   DATA           DGROUP         0002:00001da4   00000004
+SET3___fork_child1__   DATA           DGROUP         0002:00001da8   00000004
+________DATA           DATA           DGROUP         0002:00001db0   00000000
+BSS32                  BSS            DGROUP         0002:00001db0   00000110
+c_common               BSS            DGROUP         0002:00001ec0   00000000
+________BSS            BSS            DGROUP         0002:00001ec0   00000000
+STACK                  STACK          AUTO           0003:00000000   00100000
+
+
+                        +----------------+
+                        |   Memory Map   |
+                        +----------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol
+=======        ======
+
+Module: F:\dev\gcc061\lib\crt0hiwildresp.obj({standard input})
+0001:00000000* __text
+0002:00000000* __data
+0002:00000000* ___data_start
+0002:00001db0* ___bss_start
+0002:00001d20+ __os2dll
+0002:00001d28  ___CTOR_LIST__
+0002:00001d38  ___DTOR_LIST__
+0002:00001d44* ___crtinit1__
+0002:00001d4c* ___crtexit1__
+0002:00001d54  ___eh_frame__
+0002:00001d80  ___eh_init__
+0002:00001d8c  ___eh_term__
+0002:00001d98+ ___fork_parent1__
+0002:00001da0+ ___fork_child1__
+Module: F:\rd\dse\xapian-core-1.0.2\bin\bin_xapian_inspect-xapian-inspect.o(bin\xapian-inspect.cc)
+0001:0000033c  _main
+0001:0000124c  __ZTIN6Xapian5ErrorE$w$TEWXD0rdFP5wXo9f4
+0001:00001184* __ZNSt15basic_streambufIcSt11char_traitsIcEE13_S_pback_sizeE$w$TEWXD0rdFP5wXo9f4
+0001:00001254  __ZTSN6Xapian5ErrorE$w$TEWXD0rdFP5wXo9f4
+0002:00001db0  __ZN16__Atomicity_lockILi0EE17_S_atomicity_lockE$w$TEWXD0rdFP5wXo9f4
+0001:0000033c* main
+Module: F:\dev\gcc061\lib\libend.lib(src/libend/386/endlink386.asm)
+0002:00001ec0  _end
+0002:00001db0  _edata
+Module: F:\dev\gcc061\lib\libend.lib(src/libend/386/end.asm)
+0001:0001b710* _etext
+0001:0001b710* __etext
+0000:00000000  WEAK$ZERO
+0002:00001ec0  __end
+0002:00001db0  __edata
+Module: T:\tmp\ldconv_libgcc_so_d_a_4d56473e9a2c1ba478.lib(__main.obj)
+0001:000012a0* ___do_global_dtors
+0001:000012a6* ___do_global_ctors
+0001:000012b6* ___POST$__do_global_ctors
+0001:000012b8  ___main
+0001:000012c2* ___POST$__main
+Module: F:\rd\dse\xapian-core-1.0.2\.libs\getopt.a(common\getopt.cc)
+0001:0000145c  __Z20gnu_getopt_internal_iPKPcPKcPK6optionPii
+0002:00000220  _optind
+0002:00000224* _opterr
+0002:00000228* _optopt
+0002:00001de0* _optarg
+0002:00001de4* ___getopt_initialized
+Module: F:\rd\dse\xapian-core-1.0.2\.libs\xapian.a(backends\flint\flint_table.cc)
+0001:00002198* __ZNK10FlintTable10read_blockEmPh
+0001:0000245a* __ZNK10FlintTable11write_blockEmPKh
+0001:00002b6c* __ZNK10FlintTable15set_overwrittenEv
+0001:00002fbc* __ZNK10FlintTable15block_to_cursorEP7Cursor_im
+0001:000030e4* __ZN10FlintTable5alterEv
+0001:000031f4* __ZN10FlintTable13find_in_blockEPKh4Key_bi
+0001:0000a13e* __ZNK4Key_ltES_
+0001:00003304  __ZNK10FlintTable4findEP7Cursor_
+0001:0000a1c8* __ZNK4Key_eqES_
+0001:0000342e* __ZN10FlintTable7compactEPh
+0001:00003530* __ZN10FlintTable10split_rootEm
+0001:00003c4e* __ZN10FlintTable8add_itemE8Item_wr_i
+0001:00003862* __ZN10FlintTable9enter_keyEi4Key_S0_
+0001:00003ab4* __ZN10FlintTable9mid_pointEPh
+0001:00003b46* __ZN10FlintTable17add_item_to_blockEPh8Item_wr_i
+0001:00003ec8* __ZN10FlintTable11delete_itemEib
+0001:00004122* __ZN10FlintTable6add_ktEb
+0001:000042d0* __ZN10FlintTable9delete_ktEv
+0001:00004362  __ZNK10FlintTable8form_keyERKSs
+0001:0000446e* __ZN10FlintTable3addERKSsSsb
+0001:000082f0* __ZN10FlintTable15create_and_openEj
+0001:00005314  __ZN10FlintTable3delERKSs
+0001:000053ae* __ZNK10FlintTable15get_exact_entryERKSsRSs
+0001:0000542a* __ZNK10FlintTable8find_tagERKSsPSs
+0001:000053e4* __ZNK10FlintTable10key_existsERKSs
+0001:000054f4  __ZNK10FlintTable8read_tagEP7Cursor_PSsb
+0001:00006130* __ZN10FlintTable19set_full_compactionEb
+0001:0000614a* __ZNK10FlintTable10cursor_getEv
+0001:000061cc* __ZN10FlintTable10basic_openEbj
+0001:00006838* __ZN10FlintTable9read_rootEv
+0001:000069c0* __ZN10FlintTable16do_open_to_writeEbjb
+0001:00009f58* __ZNK10FlintTable12prev_defaultEP7Cursor_i
+0001:0000a046* __ZNK10FlintTable12next_defaultEP7Cursor_i
+0001:00007112* __ZN10FlintTableC2ESsbib
+0001:0000722c  __ZN10FlintTableC1ESsbib
+0001:00007352* __ZNK10FlintTable6existsEv
+0001:000076fa* __ZN10FlintTable5eraseEv
+0001:00008a10* __ZN10FlintTable5closeEv
+0001:000082c8* __ZN10FlintTable14set_block_sizeEj
+0001:00008898* __ZN10FlintTableD2Ev
+0001:00008954  __ZN10FlintTableD1Ev
+0001:00008b08* __ZN10FlintTable6commitEj
+0001:00009280* __ZN10FlintTable6cancelEv
+0001:0000966a* __ZN10FlintTable15do_open_to_readEbj
+0001:00009dc4* __ZNK10FlintTable19prev_for_sequentialEP7Cursor_i
+0001:00009e8a* __ZNK10FlintTable19next_for_sequentialEP7Cursor_i
+0001:00009cf4  __ZN10FlintTable4openEv
+0001:00009d50* __ZN10FlintTable4openEj
+0001:0000a4ac  __ZN6Xapian13DatabaseErrorD1Ev$w$JlvPuhXcFP5BoWMn2
+0001:0000a814* __ZTIN6Xapian13DatabaseErrorE$w$JlvPuhXcFP5BoWMn2
+0001:0000a314  __ZN6Xapian5ErrorC2ERKSsS2_PKci$w$JlvPuhXcFP5BoWMn2
+0001:0000a580* __ZN6Xapian20DatabaseCorruptErrorD1Ev$w$JlvPuhXcFP5BoWMn2
+0001:0000a808* __ZTIN6Xapian20DatabaseCorruptErrorE$w$JlvPuhXcFP5BoWMn2
+0001:0000a654  __ZN6Xapian21DatabaseModifiedErrorD1Ev$w$JlvPuhXcFP5BoWMn2
+0001:0000a820  __ZTIN6Xapian21DatabaseModifiedErrorE$w$JlvPuhXcFP5BoWMn2
+0001:0000a21a  __ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_EPKS3_RKS6_$w$JlvPuhXcFP5BoWMn2
+0001:0000a3d8  __ZN6Xapian20InvalidArgumentErrorD1Ev$w$JlvPuhXcFP5BoWMn2
+0001:0000a82c  __ZTIN6Xapian20InvalidArgumentErrorE$w$JlvPuhXcFP5BoWMn2
+0001:0000a7fc  __ZTISt9bad_alloc$w$JlvPuhXcFP5BoWMn2
+0001:0000a728  __ZN6Xapian20DatabaseOpeningErrorD1Ev$w$JlvPuhXcFP5BoWMn2
+0001:0000a838  __ZTIN6Xapian20DatabaseOpeningErrorE$w$JlvPuhXcFP5BoWMn2
+0001:0000a8f0  __ZTSSt9bad_alloc$w$JlvPuhXcFP5BoWMn2
+0001:0000a900  __ZTISt9exception$w$JlvPuhXcFP5BoWMn2
+0001:0000a8d0* __ZTSN6Xapian20DatabaseCorruptErrorE$w$JlvPuhXcFP5BoWMn2
+0001:0000a8b1* __ZTSN6Xapian13DatabaseErrorE$w$JlvPuhXcFP5BoWMn2
+0001:0000a914* __ZTIN6Xapian12RuntimeErrorE$w$JlvPuhXcFP5BoWMn2
+0001:0000a890  __ZTSN6Xapian21DatabaseModifiedErrorE$w$JlvPuhXcFP5BoWMn2
+0001:0000a870  __ZTSN6Xapian20InvalidArgumentErrorE$w$JlvPuhXcFP5BoWMn2
+0001:0000a908  __ZTIN6Xapian10LogicErrorE$w$JlvPuhXcFP5BoWMn2
+0001:0000a850  __ZTSN6Xapian20DatabaseOpeningErrorE$w$JlvPuhXcFP5BoWMn2
+0001:0000a94e  __ZTSSt9exception$w$JlvPuhXcFP5BoWMn2
+0001:0000a938  __ZTSN6Xapian10LogicErrorE$w$JlvPuhXcFP5BoWMn2
+0001:0000a95c* __ZTIN6Xapian5ErrorE$w$JlvPuhXcFP5BoWMn2
+0001:0000a920* __ZTSN6Xapian12RuntimeErrorE$w$JlvPuhXcFP5BoWMn2
+0001:0000a964* __ZTSN6Xapian5ErrorE$w$JlvPuhXcFP5BoWMn2
+0002:00001e40* __ZN16__Atomicity_lockILi0EE17_S_atomicity_lockE$w$JlvPuhXcFP5BoWMn2
+Module: F:\rd\dse\xapian-core-1.0.2\.libs\xapian.a(backends\flint\flint_cursor.cc)
+0001:0000a990* __ZN11FlintCursorC2EP10FlintTable
+0001:0000ab52  __ZN11FlintCursorC1EP10FlintTable
+0001:0000ad14* __ZN11FlintCursorD2Ev
+0001:0000adfc  __ZN11FlintCursorD1Ev
+0001:0000aee4  __ZN11FlintCursor4prevEv
+0001:0000b580* __ZNK11FlintCursor7get_keyEPSs
+0001:0000b146  __ZN11FlintCursor10find_entryERKSs
+0001:0000b036  __ZN11FlintCursor4nextEv
+0001:0000b5c2  __ZN11FlintCursor8read_tagEb
+0001:0000b66c* __ZN11FlintCursor3delEv
+0001:0000b6aa  __ZN6Xapian20DatabaseCorruptErrorD1Ev$w$V755DRQcFP5VVtfM1
+0001:0000b780  __ZTIN6Xapian20DatabaseCorruptErrorE$w$V755DRQcFP5VVtfM1
+0001:0000b790  __ZTSN6Xapian20DatabaseCorruptErrorE$w$V755DRQcFP5VVtfM1
+0001:0000b7b0  __ZTIN6Xapian13DatabaseErrorE$w$V755DRQcFP5VVtfM1
+0001:0000b7bc  __ZTSN6Xapian13DatabaseErrorE$w$V755DRQcFP5VVtfM1
+0001:0000b7d8  __ZTIN6Xapian12RuntimeErrorE$w$V755DRQcFP5VVtfM1
+0001:0000b7e4  __ZTSN6Xapian12RuntimeErrorE$w$V755DRQcFP5VVtfM1
+0001:0000b7fc* __ZTIN6Xapian5ErrorE$w$V755DRQcFP5VVtfM1
+0001:0000b804* __ZTSN6Xapian5ErrorE$w$V755DRQcFP5VVtfM1
+0002:00001e50* __ZN16__Atomicity_lockILi0EE17_S_atomicity_lockE$w$V755DRQcFP5VVtfM1
+Module: F:\rd\dse\xapian-core-1.0.2\.libs\xapian.a(api\error.cc)
+0001:0000b830* __ZN6Xapian5ErrorC2ERKSsS2_PKcS4_
+0001:0000b9aa* __ZN6Xapian5ErrorC1ERKSsS2_PKcS4_
+0001:0000bb24* __ZNK6Xapian5Error16get_error_stringEv
+0001:0000bbc8  __ZNK6Xapian5Error15get_descriptionEv
+0002:00001e60* __ZN16__Atomicity_lockILi0EE17_S_atomicity_lockE$w$hPNbTNGcFP5hEmYu1
+Module: T:\tmp\ldconv_libgcc_so_d_a_4d56473e9a2c1ba478.lib(emx-eh.obj)
+0001:0000bd50  ___ehInit
+0001:0000bd79* ___POST$__ehInit
+0001:0000bd82* ___ehTerm
+0001:0000bdaa* ___POST$__ehTerm
+Module: F:\rd\dse\xapian-core-1.0.2\.libs\xapian.a(backends\flint\flint_btreebase.cc)
+0001:0000bdc0* __ZN15FlintTable_baseC2Ev
+0001:0000be16  __ZN15FlintTable_baseC1Ev
+0001:0000be6c* __ZN15FlintTable_baseC2ERKS_
+0001:0000bf48* __ZN15FlintTable_baseC1ERKS_
+0001:0000c024  __ZN15FlintTable_base4swapERS_
+0001:0000c0c2* __ZN15FlintTable_baseD2Ev
+0001:0000c106  __ZN15FlintTable_baseD1Ev
+0001:0000c162* __ZN15FlintTable_base14do_unpack_uintEPPKcS1_PmRSsRKSsS1_
+0001:0000c6be  __ZN15FlintTable_base4readERKSscRSs
+0001:0000ea0e  __ZN15FlintTable_base13write_to_fileERKSs
+0001:0000f92c* __ZN15FlintTable_base20calculate_last_blockEv
+0001:0000f71c  __ZNK15FlintTable_base19block_free_at_startEm
+0001:0000f748  __ZN15FlintTable_base10free_blockEm
+0001:0000f79a* __ZN15FlintTable_base14extend_bit_mapEv
+0001:0000f89a  __ZN15FlintTable_base15next_free_blockEv
+0001:0000f900* __ZN15FlintTable_base14block_free_nowEm
+0001:0000f992* __ZNK15FlintTable_base8is_emptyEv
+0001:0000f9bc  __ZN15FlintTable_base13clear_bit_mapEv
+0001:0000f9e4  __ZN15FlintTable_base6commitEv
+0001:0000feea  __Z11unpack_uintImEbPPKcS1_PT_$w$fEw9TCQcFP5YHp9p1
+0001:0000fa98* __ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_EPKS3_RKS6_$w$fEw9TCQcFP5YHp9p1
+0001:0000fa18  __ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_ERKS6_S8_$w$fEw9TCQcFP5YHp9p1
+0001:0000fb8e  __Z9pack_uintImESsT_$w$fEw9TCQcFP5YHp9p1
+0001:0000fda6  __Z9pack_uintIjESsT_$w$fEw9TCQcFP5YHp9p1
+0001:0000fcd2* __ZN6Xapian20DatabaseOpeningErrorD1Ev$w$fEw9TCQcFP5YHp9p1
+0001:0000ff70* __ZTIN6Xapian20DatabaseOpeningErrorE$w$fEw9TCQcFP5YHp9p1
+0001:0000ff80* __ZTSN6Xapian20DatabaseOpeningErrorE$w$fEw9TCQcFP5YHp9p1
+0001:0000ffa0* __ZTIN6Xapian13DatabaseErrorE$w$fEw9TCQcFP5YHp9p1
+0001:0000ffac* __ZTSN6Xapian13DatabaseErrorE$w$fEw9TCQcFP5YHp9p1
+0001:0000ffc8* __ZTIN6Xapian12RuntimeErrorE$w$fEw9TCQcFP5YHp9p1
+0001:0000ffd4* __ZTSN6Xapian12RuntimeErrorE$w$fEw9TCQcFP5YHp9p1
+0001:0000ffec* __ZTIN6Xapian5ErrorE$w$fEw9TCQcFP5YHp9p1
+0001:0000fff4* __ZTSN6Xapian5ErrorE$w$fEw9TCQcFP5YHp9p1
+0002:00001e80* __ZN16__Atomicity_lockILi0EE17_S_atomicity_lockE$w$fEw9TCQcFP5YHp9p1
+Module: T:\tmp\ldconv_libgcc_so_d_a_4d56473e9a2c1ba478.lib(emx-ctordtor.obj)
+0001:00010020  ___ctordtorInit
+0001:0001002a* ___POST$__ctordtorInit
+0001:0001004e  ___ctordtorTerm
+0001:00010058* ___POST$__ctordtorTerm
+Module: F:\rd\dse\xapian-core-1.0.2\.libs\xapian.a(backends\flint\flint_io.cc)
+0001:00010122  __Z13flint_io_readiPcjj
+0001:000105d4  __Z14flint_io_writeiPKcj
+0001:00010848* __ZN6Xapian13DatabaseErrorD1Ev$w$jcp3ERScFP5LRCO13
+0001:0001091c* __ZTIN6Xapian13DatabaseErrorE$w$jcp3ERScFP5LRCO13
+0001:00010928* __ZTSN6Xapian13DatabaseErrorE$w$jcp3ERScFP5LRCO13
+0001:00010944* __ZTIN6Xapian12RuntimeErrorE$w$jcp3ERScFP5LRCO13
+0001:00010950* __ZTSN6Xapian12RuntimeErrorE$w$jcp3ERScFP5LRCO13
+0001:00010968* __ZTIN6Xapian5ErrorE$w$jcp3ERScFP5LRCO13
+0001:00010970* __ZTSN6Xapian5ErrorE$w$jcp3ERScFP5LRCO13
+0002:00001ea0* __ZN16__Atomicity_lockILi0EE17_S_atomicity_lockE$w$jcp3ERScFP5LRCO13
+Module: F:\rd\dse\xapian-core-1.0.2\.libs\xapian.a(common\utils.cc)
+0001:00010980* __ZN6Xapian8Internal6is_tabE
+0001:00010a80* __ZN6Xapian8Internal6lo_tabE
+0001:00010ba0* __ZN6Xapian8Internal6up_tabE
+0001:00010ca4* __Z11om_tostringi
+0001:00010d36  __Z11om_tostringj
+0001:00010dc8* __Z11om_tostringl
+0001:00010e5a  __Z11om_tostringm
+0001:00010eee* __Z11om_tostringd
+0001:00010f80* __Z11om_tostringPKv
+0001:00011012* __Z11om_tostringb
+0001:00011054  __Z11file_existsRKSs
+0002:00001eb0* __ZN16__Atomicity_lockILi0EE17_S_atomicity_lockE$w$5vuJVq5dFP5zay9A1
+Module: F:\dev\gcc061\local\lib\libz.lib(deflate.obj)
+0001:000110c0* _deflate_copyright
+0001:0001117e  _deflateInit2_
+0001:00011562* _deflateReset
+0001:00011d40  _deflateEnd
+0001:00011415* _deflateSetDictionary
+0001:00011647* _deflateParams
+0001:00011726  _deflate
+0001:00011e0c* _deflateCopy
+0001:00012def  _deflateInit_
+0001:00012e39* _deflatePrime
+0001:00012e72* _deflateBound
+Module: F:\dev\gcc061\local\lib\libz.lib(inflate.obj)
+0001:00013220  _inflateInit2_
+0001:00013e08  _inflate
+0001:00015418* _inflateSetDictionary
+0001:00015505* _inflateSync
+0001:00015726* _inflateCopy
+0001:0001585a* _inflateReset
+0001:000158d8* _inflateInit_
+0001:00015903  _inflateEnd
+0001:0001595f* _inflateSyncPoint
+Module: F:\dev\gcc061\local\lib\libz.lib(zutil.obj)
+0001:00015b40  _z_errmsg
+0001:00015b68* _zlibCompileFlags
+0001:00015b78* _zlibVersion
+0001:00015b82* _zError
+0001:00015b96  _zcalloc
+0001:00015ba9  _zcfree
+Module: F:\dev\gcc061\local\lib\libz.lib(adler32.obj)
+0001:00015bc0  _adler32
+Module: F:\dev\gcc061\local\lib\libz.lib(trees.obj)
+0001:00016340  __dist_code
+0001:00016540  __length_code
+0001:00016738  __tr_stored_block
+0001:000167eb  __tr_align
+0001:00016a62  __tr_flush_block
+0001:000173fd  __tr_init
+0001:000174d3* __tr_tally
+Module: F:\dev\gcc061\local\lib\libz.lib(crc32.obj)
+0001:0001a4e0  _crc32
+0001:0001a9f8* _get_crc_table
+Module: F:\dev\gcc061\local\lib\libz.lib(compress.obj)
+0001:0001aa26* _compress2
+0001:0001aad2* _compress
+0001:0001ab7f  _compressBound
+Module: F:\dev\gcc061\local\lib\libz.lib(inftrees.obj)
+0001:0001aba0* _inflate_copyright
+0001:0001ace0  _inflate_table
+Module: F:\dev\gcc061\local\lib\libz.lib(inffast.obj)
+0001:0001b270  _inflate_fast
+
+
+                        +----------------------+
+                        |   Imported Symbols   |
+                        +----------------------+
+
+Symbol                              Module
+======                              ======
+
+___libc_ForkRegisterModule          libc063
+___init_app                         libc063
+__response                          libc063
+__wildcard                          libc063
+__CRT_init                          libc063
+__atfork_callback                   libc063
+__fmode_bin                         libc063
+__ZNSt8ios_base4InitD1Ev            libc063
+__ZNSt8ios_base4InitC1Ev            libc063
+__alloca                            libc063
+__ZSt4cout                          libc063
+__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc libc063
+__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ libc063
+__ZNSolsEPFRSoS_E                   libc063
+__ZNSsC1EPKcRKSaIcE                 libc063
+__ZNSs6appendEjc                    libc063
+__ZNSsC1ERKSs                       libc063
+__ZSt3cin                           libc063
+__ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ libc063
+__ZNSs20_S_empty_rep_storageE       libc063
+__ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc libc063
+__ZSt7getlineIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RSbIS4_S5_T1_ES4_ libc063
+__ZNKSs7compareEPKc                 libc063
+__ZNSs4_Rep10_M_destroyERKSaIcE     libc063
+__ZSt20__throw_out_of_rangePKc      libc063
+__ZNSsC1ERKSsjj                     libc063
+__ZNSs6resizeEjc                    libc063
+__ZNSs12_M_leak_hardEv              libc063
+__Unwind_Resume                     libc063
+___cxa_begin_catch                  libc063
+__ZSt4cerr                          libc063
+__ZStlsIcSt11char_traitsIcESaIcEERSt13basic_ostreamIT_T0_ES7_RKSbIS4_S5_T1_E libc063
+___cxa_end_catch                    libc063
+__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c libc063
+__ZTVN10__cxxabiv117__class_type_infoE libc063
+___gxx_personality_v0               libc063
+__std_exit                          libc063
+___stderrp                          libc063
+__errno                             libc063
+__ZNSs6appendEPKcj                  libc063
+___cxa_allocate_exception           libc063
+___cxa_throw                        libc063
+___cxa_free_exception               libc063
+__ZNSs4_Rep11_S_terminalE           libc063
+__ZNSs6appendERKSs                  libc063
+__Znaj                              libc063
+__ZdaPv                             libc063
+__ZTVSt9bad_alloc                   libc063
+__ZNSt9bad_allocD1Ev                libc063
+__ZNSs6assignEPKcj                  libc063
+__ZNSs7reserveEj                    libc063
+__ZNSs4swapERSs                     libc063
+__Znwj                              libc063
+__ZdlPv                             libc063
+__ZNSsD1Ev                          libc063
+__ZNSaIcED1Ev                       libc063
+__ZNSs4_Rep10_M_disposeERKSaIcE     libc063
+__ZNSs7replaceEjjPKcj               libc063
+__ZTVN10__cxxabiv120__si_class_type_infoE libc063
+_hstrerror                          tcpip32
+__std_sprintf                       libc063
+___register_frame_table             libc063
+___deregister_frame                 libc063
+__ZNSsC1EjcRKSaIcE                  libc063
+___cxa_rethrow                      libc063
+__ZNSsC1EPKcjRKSaIcE                libc063
+___ctordtorInit1                    libc063
+___ctordtorTerm1                    libc063
+__std_atexit                        libc063
+__std_strncmp                       libc063
+__std_fprintf                       libc063
+__std_strchr                        libc063
+__std_getenv                        libc063
+__std_lseek                         libc063
+__std_strerror                      libc063
+__std_unlink                        libc063
+__std_memcpy                        libc063
+__std_memmove                       libc063
+__std_memset                        libc063
+__std_abort                         libc063
+__std_close                         libc063
+__std_open                          libc063
+__std_fsync                         libc063
+__std_read                          libc063
+__std_write                         libc063
+__std_snprintf                      libc063
+__std_stat                          libc063
+__std_malloc                        libc063
+__std_free                          libc063
+
+
+                        +--------------------+
+                        |   Libraries Used   |
+                        +--------------------+
+
+F:\rd\dse\xapian-core-1.0.2\.libs\getopt.a
+F:\rd\dse\xapian-core-1.0.2\.libs\xapian.a
+F:\dev\gcc061\local\lib\libz.lib
+F:\dev\gcc061\lib\libsocket.lib
+F:\dev\gcc061\lib\libc_dll.lib
+F:\dev\gcc061\lib\libc_alias.lib
+T:\tmp\ldconv_libgcc_so_d_a_4d56473e9a2c1ba478.lib
+F:\dev\gcc061\lib\libend.lib
+
+
+                        +-----------------------+
+                        |   Linker Statistics   |
+                        +-----------------------+
+
+Stack size:  00100000 (1048576.)
+Memory size:  0011d5d0 (1168848.)
+Entry point address: 0001:00000000
+Link time: 00:00.14

@@ -1,0 +1,423 @@
+backends/alltermslist.lo backends/alltermslist.o:  \
+ backends/alltermslist.cc config.h include/xapian/error.h \
+  f:/dev/gcc061/include/c++/3.3.5/string \
+  f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/c++config.h \
+  f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/os_defines.h \
+  f:/dev/gcc061/include/machine/_types.h \
+  f:/dev/gcc061/include/386/_types.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/stringfwd.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/char_traits.h \
+  f:/dev/gcc061/include/c++/3.3.5/cstring \
+  f:/dev/gcc061/include/c++/3.3.5/cstddef f:/dev/gcc061/include/stddef.h \
+  f:/dev/gcc061/include/sys/cdefs.h f:/dev/gcc061/include/sys/gnu/cdefs.h \
+  f:/dev/gcc061/include/features.h f:/dev/gcc061/include/sys/_types.h \
+  f:/dev/gcc061/include/string.h f:/dev/gcc061/include/strings.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/fpos.h \
+  f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/c++io.h \
+  f:/dev/gcc061/include/c++/3.3.5/cstdio f:/dev/gcc061/include/stdio.h \
+  f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/gthr.h \
+  f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/gthr-default.h \
+  f:/dev/gcc061/include/sys/builtin.h f:/dev/gcc061/include/386/builtin.h \
+  f:/dev/gcc061/include/stdint.h f:/dev/gcc061/include/sys/stdint.h \
+  f:/dev/gcc061/include/machine/_stdint.h \
+  f:/dev/gcc061/include/386/_stdint.h f:/dev/gcc061/include/sys/fmutex.h \
+  f:/dev/gcc061/include/stdlib.h f:/dev/gcc061/include/sys/_null.h \
+  f:/dev/gcc061/include/malloc.h \
+  f:/dev/gcc061/include/InnoTekLIBC/FastInfoBlocks.h \
+  f:/dev/gcc061/include/errno.h f:/dev/gcc061/include/sys/errno.h \
+  f:/dev/gcc061/include/InnoTekLIBC/thread.h f:/dev/gcc061/include/time.h \
+  f:/dev/gcc061/include/sys/timespec.h f:/dev/gcc061/include/signal.h \
+  f:/dev/gcc061/include/sys/signal.h \
+  f:/dev/gcc061/include/machine/signal.h \
+  f:/dev/gcc061/include/386/signal.h f:/dev/gcc061/include/sys/_sigset.h \
+  f:/dev/gcc061/include/machine/trap.h f:/dev/gcc061/include/386/trap.h \
+  f:/dev/gcc061/include/InnoTekLIBC/backend.h \
+  f:/dev/gcc061/include/sys/types.h \
+  f:/dev/gcc061/include/machine/endian.h \
+  f:/dev/gcc061/include/386/endian.h f:/dev/gcc061/include/sys/select.h \
+  f:/dev/gcc061/include/sys/_timeval.h \
+  f:/dev/gcc061/include/sys/resource.h f:/dev/gcc061/include/sys/time.h \
+  f:/dev/gcc061/include/sys/wait.h f:/dev/gcc061/include/sys/sem.h \
+  f:/dev/gcc061/include/sys/ipc.h f:/dev/gcc061/include/sys/shm.h \
+  f:/dev/gcc061/include/emx/io.h f:/dev/gcc061/include/InnoTekLIBC/fork.h \
+  f:/dev/gcc061/include/alloca.h f:/dev/gcc061/include/stdarg.h \
+  f:/dev/gcc061/include/machine/stdarg.h \
+  f:/dev/gcc061/include/386/stdarg.h \
+  f:/dev/gcc061/include/c++/3.3.5/cwchar \
+  f:/dev/gcc061/include/c++/3.3.5/ctime f:/dev/gcc061/include/wchar.h \
+  f:/dev/gcc061/include/machine/_limits.h \
+  f:/dev/gcc061/include/386/_limits.h f:/dev/gcc061/include/_ctype.h \
+  f:/dev/gcc061/include/c++/3.3.5/memory \
+  f:/dev/gcc061/include/c++/3.3.5/bits/stl_algobase.h \
+  f:/dev/gcc061/include/c++/3.3.5/climits f:/dev/gcc061/include/limits.h \
+  f:/dev/gcc061/include/sys/limits.h \
+  f:/dev/gcc061/include/sys/syslimits.h \
+  f:/dev/gcc061/include/c++/3.3.5/cstdlib \
+  f:/dev/gcc061/include/c++/3.3.5/new \
+  f:/dev/gcc061/include/c++/3.3.5/exception \
+  f:/dev/gcc061/include/c++/3.3.5/iosfwd \
+  f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/c++locale.h \
+  f:/dev/gcc061/include/c++/3.3.5/clocale f:/dev/gcc061/include/locale.h \
+  f:/dev/gcc061/include/c++/3.3.5/cctype f:/dev/gcc061/include/ctype.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/functexcept.h \
+  f:/dev/gcc061/include/c++/3.3.5/exception_defines.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/stl_pair.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/type_traits.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/stl_iterator_base_types.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/stl_iterator_base_funcs.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/concept_check.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/stl_iterator.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/stl_alloc.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/stl_threads.h \
+  f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/atomicity.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/stl_construct.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/stl_uninitialized.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/stl_raw_storage_iter.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/stl_function.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/basic_string.h \
+  f:/dev/gcc061/include/c++/3.3.5/algorithm \
+  f:/dev/gcc061/include/c++/3.3.5/bits/stl_algo.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/stl_heap.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/stl_tempbuf.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/basic_string.tcc \
+  include/xapian/deprecated.h include/xapian/visibility.h \
+  common/alltermslist.h common/termlist.h include/xapian/types.h \
+  include/xapian/termiterator.h f:/dev/gcc061/include/c++/3.3.5/iterator \
+  f:/dev/gcc061/include/c++/3.3.5/ostream \
+  f:/dev/gcc061/include/c++/3.3.5/ios \
+  f:/dev/gcc061/include/c++/3.3.5/bits/localefwd.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/ios_base.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/locale_classes.h \
+  f:/dev/gcc061/include/c++/3.3.5/streambuf \
+  f:/dev/gcc061/include/c++/3.3.5/bits/streambuf.tcc \
+  f:/dev/gcc061/include/c++/3.3.5/bits/basic_ios.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/streambuf_iterator.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/locale_facets.h \
+  f:/dev/gcc061/include/c++/3.3.5/cwctype f:/dev/gcc061/include/wctype.h \
+  f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/ctype_base.h \
+  f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/ctype_inline.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/codecvt.h \
+  f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/time_members.h \
+  f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/messages_members.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/basic_ios.tcc \
+  f:/dev/gcc061/include/c++/3.3.5/bits/ostream.tcc \
+  f:/dev/gcc061/include/c++/3.3.5/locale \
+  f:/dev/gcc061/include/c++/3.3.5/bits/locale_facets.tcc \
+  f:/dev/gcc061/include/c++/3.3.5/cerrno \
+  f:/dev/gcc061/include/c++/3.3.5/cmath f:/dev/gcc061/include/math.h \
+  f:/dev/gcc061/include/c++/3.3.5/bits/cmath.tcc \
+  f:/dev/gcc061/include/c++/3.3.5/limits \
+  f:/dev/gcc061/include/c++/3.3.5/typeinfo \
+  f:/dev/gcc061/include/c++/3.3.5/istream \
+  f:/dev/gcc061/include/c++/3.3.5/bits/istream.tcc \
+  f:/dev/gcc061/include/c++/3.3.5/bits/stream_iterator.h \
+  include/xapian/base.h include/xapian/positioniterator.h \
+  common/omassert.h common/utils.h common/safesysstat.h \
+  f:/dev/gcc061/include/sys/stat.h common/safeunistd.h \
+  f:/dev/gcc061/include/unistd.h f:/dev/gcc061/include/sys/unistd.h
+
+config.h:
+
+include/xapian/error.h:
+
+f:/dev/gcc061/include/c++/3.3.5/string:
+
+f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/c++config.h:
+
+f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/os_defines.h:
+
+f:/dev/gcc061/include/machine/_types.h:
+
+f:/dev/gcc061/include/386/_types.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/stringfwd.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/char_traits.h:
+
+f:/dev/gcc061/include/c++/3.3.5/cstring:
+
+f:/dev/gcc061/include/c++/3.3.5/cstddef:
+
+f:/dev/gcc061/include/stddef.h:
+
+f:/dev/gcc061/include/sys/cdefs.h:
+
+f:/dev/gcc061/include/sys/gnu/cdefs.h:
+
+f:/dev/gcc061/include/features.h:
+
+f:/dev/gcc061/include/sys/_types.h:
+
+f:/dev/gcc061/include/string.h:
+
+f:/dev/gcc061/include/strings.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/fpos.h:
+
+f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/c++io.h:
+
+f:/dev/gcc061/include/c++/3.3.5/cstdio:
+
+f:/dev/gcc061/include/stdio.h:
+
+f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/gthr.h:
+
+f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/gthr-default.h:
+
+f:/dev/gcc061/include/sys/builtin.h:
+
+f:/dev/gcc061/include/386/builtin.h:
+
+f:/dev/gcc061/include/stdint.h:
+
+f:/dev/gcc061/include/sys/stdint.h:
+
+f:/dev/gcc061/include/machine/_stdint.h:
+
+f:/dev/gcc061/include/386/_stdint.h:
+
+f:/dev/gcc061/include/sys/fmutex.h:
+
+f:/dev/gcc061/include/stdlib.h:
+
+f:/dev/gcc061/include/sys/_null.h:
+
+f:/dev/gcc061/include/malloc.h:
+
+f:/dev/gcc061/include/InnoTekLIBC/FastInfoBlocks.h:
+
+f:/dev/gcc061/include/errno.h:
+
+f:/dev/gcc061/include/sys/errno.h:
+
+f:/dev/gcc061/include/InnoTekLIBC/thread.h:
+
+f:/dev/gcc061/include/time.h:
+
+f:/dev/gcc061/include/sys/timespec.h:
+
+f:/dev/gcc061/include/signal.h:
+
+f:/dev/gcc061/include/sys/signal.h:
+
+f:/dev/gcc061/include/machine/signal.h:
+
+f:/dev/gcc061/include/386/signal.h:
+
+f:/dev/gcc061/include/sys/_sigset.h:
+
+f:/dev/gcc061/include/machine/trap.h:
+
+f:/dev/gcc061/include/386/trap.h:
+
+f:/dev/gcc061/include/InnoTekLIBC/backend.h:
+
+f:/dev/gcc061/include/sys/types.h:
+
+f:/dev/gcc061/include/machine/endian.h:
+
+f:/dev/gcc061/include/386/endian.h:
+
+f:/dev/gcc061/include/sys/select.h:
+
+f:/dev/gcc061/include/sys/_timeval.h:
+
+f:/dev/gcc061/include/sys/resource.h:
+
+f:/dev/gcc061/include/sys/time.h:
+
+f:/dev/gcc061/include/sys/wait.h:
+
+f:/dev/gcc061/include/sys/sem.h:
+
+f:/dev/gcc061/include/sys/ipc.h:
+
+f:/dev/gcc061/include/sys/shm.h:
+
+f:/dev/gcc061/include/emx/io.h:
+
+f:/dev/gcc061/include/InnoTekLIBC/fork.h:
+
+f:/dev/gcc061/include/alloca.h:
+
+f:/dev/gcc061/include/stdarg.h:
+
+f:/dev/gcc061/include/machine/stdarg.h:
+
+f:/dev/gcc061/include/386/stdarg.h:
+
+f:/dev/gcc061/include/c++/3.3.5/cwchar:
+
+f:/dev/gcc061/include/c++/3.3.5/ctime:
+
+f:/dev/gcc061/include/wchar.h:
+
+f:/dev/gcc061/include/machine/_limits.h:
+
+f:/dev/gcc061/include/386/_limits.h:
+
+f:/dev/gcc061/include/_ctype.h:
+
+f:/dev/gcc061/include/c++/3.3.5/memory:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/stl_algobase.h:
+
+f:/dev/gcc061/include/c++/3.3.5/climits:
+
+f:/dev/gcc061/include/limits.h:
+
+f:/dev/gcc061/include/sys/limits.h:
+
+f:/dev/gcc061/include/sys/syslimits.h:
+
+f:/dev/gcc061/include/c++/3.3.5/cstdlib:
+
+f:/dev/gcc061/include/c++/3.3.5/new:
+
+f:/dev/gcc061/include/c++/3.3.5/exception:
+
+f:/dev/gcc061/include/c++/3.3.5/iosfwd:
+
+f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/c++locale.h:
+
+f:/dev/gcc061/include/c++/3.3.5/clocale:
+
+f:/dev/gcc061/include/locale.h:
+
+f:/dev/gcc061/include/c++/3.3.5/cctype:
+
+f:/dev/gcc061/include/ctype.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/functexcept.h:
+
+f:/dev/gcc061/include/c++/3.3.5/exception_defines.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/stl_pair.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/type_traits.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/stl_iterator_base_types.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/stl_iterator_base_funcs.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/concept_check.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/stl_iterator.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/stl_alloc.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/stl_threads.h:
+
+f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/atomicity.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/stl_construct.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/stl_uninitialized.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/stl_raw_storage_iter.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/stl_function.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/basic_string.h:
+
+f:/dev/gcc061/include/c++/3.3.5/algorithm:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/stl_algo.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/stl_heap.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/stl_tempbuf.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/basic_string.tcc:
+
+include/xapian/deprecated.h:
+
+include/xapian/visibility.h:
+
+common/alltermslist.h:
+
+common/termlist.h:
+
+include/xapian/types.h:
+
+include/xapian/termiterator.h:
+
+f:/dev/gcc061/include/c++/3.3.5/iterator:
+
+f:/dev/gcc061/include/c++/3.3.5/ostream:
+
+f:/dev/gcc061/include/c++/3.3.5/ios:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/localefwd.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/ios_base.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/locale_classes.h:
+
+f:/dev/gcc061/include/c++/3.3.5/streambuf:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/streambuf.tcc:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/basic_ios.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/streambuf_iterator.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/locale_facets.h:
+
+f:/dev/gcc061/include/c++/3.3.5/cwctype:
+
+f:/dev/gcc061/include/wctype.h:
+
+f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/ctype_base.h:
+
+f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/ctype_inline.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/codecvt.h:
+
+f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/time_members.h:
+
+f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/messages_members.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/basic_ios.tcc:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/ostream.tcc:
+
+f:/dev/gcc061/include/c++/3.3.5/locale:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/locale_facets.tcc:
+
+f:/dev/gcc061/include/c++/3.3.5/cerrno:
+
+f:/dev/gcc061/include/c++/3.3.5/cmath:
+
+f:/dev/gcc061/include/math.h:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/cmath.tcc:
+
+f:/dev/gcc061/include/c++/3.3.5/limits:
+
+f:/dev/gcc061/include/c++/3.3.5/typeinfo:
+
+f:/dev/gcc061/include/c++/3.3.5/istream:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/istream.tcc:
+
+f:/dev/gcc061/include/c++/3.3.5/bits/stream_iterator.h:
+
+include/xapian/base.h:
+
+include/xapian/positioniterator.h:
+
+common/omassert.h:
+
+common/utils.h:
+
+common/safesysstat.h:
+
+f:/dev/gcc061/include/sys/stat.h:
+
+common/safeunistd.h:
+
+f:/dev/gcc061/include/unistd.h:
+
+f:/dev/gcc061/include/sys/unistd.h:

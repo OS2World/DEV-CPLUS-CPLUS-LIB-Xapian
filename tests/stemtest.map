@@ -1,0 +1,469 @@
+** EXPERIMENTAL (HLL) ** Open Watcom Linker Version 1.6beta1 Limited Availability
+Portions Copyright (c) 1985-2002 Sybase, Inc. All Rights Reserved.
+Created on:       07/07/31 23:49:41
+Executable Image: stemtest.exe
+creating an OS/2 EMX executable
+
+
+                        +------------+
+                        |   Groups   |
+                        +------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+CGROUP                          0001:00000000        0000f0b0
+DGROUP                          0002:00000000        00001f80
+
+
+
+                        +--------------+
+                        |   Segments   |
+                        +--------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+TEXT32                 CODE           CGROUP         0001:00000000   0000f0b0
+________TEXT           CODE           CGROUP         0001:0000f0b0   00000000
+DATA32                 DATA           DGROUP         0002:00000000   00001b50
+SET1__os2dll           DATA           DGROUP         0002:00001b50   00000004
+SET2__os2dll           DATA           DGROUP         0002:00001b54   00000000
+SET3__os2dll           DATA           DGROUP         0002:00001b54   00000004
+SET1___CTOR_LIST__     DATA           DGROUP         0002:00001b58   00000004
+SET2___CTOR_LIST__     DATA           DGROUP         0002:00001b5c   00000014
+SET3___CTOR_LIST__     DATA           DGROUP         0002:00001b70   00000004
+SET1___DTOR_LIST__     DATA           DGROUP         0002:00001b74   00000004
+SET2___DTOR_LIST__     DATA           DGROUP         0002:00001b78   00000010
+SET3___DTOR_LIST__     DATA           DGROUP         0002:00001b88   00000004
+SET1___crtinit1__      DATA           DGROUP         0002:00001b8c   00000004
+SET2___crtinit1__      DATA           DGROUP         0002:00001b90   00000000
+SET3___crtinit1__      DATA           DGROUP         0002:00001b90   00000004
+SET1___crtexit1__      DATA           DGROUP         0002:00001b94   00000004
+SET2___crtexit1__      DATA           DGROUP         0002:00001b98   00000000
+SET3___crtexit1__      DATA           DGROUP         0002:00001b98   00000004
+SET1___eh_frame__      DATA           DGROUP         0002:00001b9c   00000004
+SET2___eh_frame__      DATA           DGROUP         0002:00001ba0   00000020
+SET3___eh_frame__      DATA           DGROUP         0002:00001bc0   00000004
+SET1___eh_init__       DATA           DGROUP         0002:00001bc4   00000004
+SET2___eh_init__       DATA           DGROUP         0002:00001bc8   00000004
+SET3___eh_init__       DATA           DGROUP         0002:00001bcc   00000004
+SET1___eh_term__       DATA           DGROUP         0002:00001bd0   00000004
+SET2___eh_term__       DATA           DGROUP         0002:00001bd4   00000004
+SET3___eh_term__       DATA           DGROUP         0002:00001bd8   00000004
+SET1___fork_parent1__  DATA           DGROUP         0002:00001bdc   00000004
+SET2___fork_parent1__  DATA           DGROUP         0002:00001be0   00000000
+SET3___fork_parent1__  DATA           DGROUP         0002:00001be0   00000004
+SET1___fork_child1__   DATA           DGROUP         0002:00001be4   00000004
+SET2___fork_child1__   DATA           DGROUP         0002:00001be8   00000004
+SET3___fork_child1__   DATA           DGROUP         0002:00001bec   00000004
+________DATA           DATA           DGROUP         0002:00001bf0   00000000
+BSS32                  BSS            DGROUP         0002:00001bf0   00000390
+c_common               BSS            DGROUP         0002:00001f80   00000000
+________BSS            BSS            DGROUP         0002:00001f80   00000000
+STACK                  STACK          AUTO           0003:00000000   00100000
+
+
+                        +----------------+
+                        |   Memory Map   |
+                        +----------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol
+=======        ======
+
+Module: E:\dev\gcc061\lib\crt0hiwildresp.obj({standard input})
+0001:00000000* __text
+0002:00000000* __data
+0002:00000000* ___data_start
+0002:00001bf0* ___bss_start
+0002:00001b50+ __os2dll
+0002:00001b58  ___CTOR_LIST__
+0002:00001b74  ___DTOR_LIST__
+0002:00001b8c* ___crtinit1__
+0002:00001b94* ___crtexit1__
+0002:00001b9c  ___eh_frame__
+0002:00001bc4  ___eh_init__
+0002:00001bd0  ___eh_term__
+0002:00001bdc+ ___fork_parent1__
+0002:00001be4+ ___fork_child1__
+Module: E:\rd\dse\xapian-core-1.0.2\tests\stemtest.o(stemtest.cc)
+0001:00002218  _main
+0002:00000050* _tests
+0001:00002a70* __ZTI8TestFail$w$ZjyVXVwPGM5m2kSc0
+0001:00002a68* __ZTI8TestSkip$w$ZjyVXVwPGM5m2kSc0
+0001:000029e2* __ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_ERKS6_S8_$w$ZjyVXVwPGM5m2kSc0
+0001:00002a64* __ZNSt15basic_streambufIcSt11char_traitsIcEE13_S_pback_sizeE$w$ZjyVXVwPGM5m2kSc0
+0001:00002a82* __ZTS8TestSkip$w$ZjyVXVwPGM5m2kSc0
+0001:00002a78* __ZTS8TestFail$w$ZjyVXVwPGM5m2kSc0
+0002:00001bf0* __ZN16__Atomicity_lockILi0EE17_S_atomicity_lockE$w$ZjyVXVwPGM5m2kSc0
+0001:00002218* main
+Module: E:\rd\dse\xapian-core-1.0.2\tests\harness\backendmanager.o(harness\backendmanager.cc)
+0001:00002b1c* __ZN14BackendManager23index_files_to_databaseERN6Xapian16WritableDatabaseERKSt6vectorISsSaISsEE
+0001:0000336a* __ZN14BackendManagerC2Ev
+0001:000039ce* __ZN14BackendManager10getdb_noneERKSt6vectorISsSaISsEE
+0001:00003bfe* __ZN14BackendManager15getwritedb_noneERKSt6vectorISsSaISsEE
+0001:000033fa* __ZN14BackendManagerC1Ev
+0001:00003518* __ZN14BackendManager10set_dbtypeERKSs
+0001:00003e2e* __ZN14BackendManager14getdb_inmemoryERKSt6vectorISsSaISsEE
+0001:00003e8e* __ZN14BackendManager19getwritedb_inmemoryERKSt6vectorISsSaISsEE
+0001:00004820* __ZN14BackendManager11getdb_flintERKSt6vectorISsSaISsEE
+0001:000048f2* __ZN14BackendManager16getwritedb_flintERKSt6vectorISsSaISsEE
+0001:00003f1e* __Z20create_dir_if_neededRKSs
+0001:0000461e* __ZN14BackendManager14createdb_flintERKSt6vectorISsSaISsEE
+0001:00004ade* __ZN14BackendManager12get_databaseERKSt6vectorISsSaISsEE
+0001:00004b34* __ZN14BackendManager12get_databaseERKSs
+0001:00004ca6* __ZN14BackendManager21get_writable_databaseERKSs
+0001:00004e32* __ZN14BackendManager26get_xapian_progsrv_commandEv
+0001:00004e3c* __ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_EPKS3_RKS6_$w$JVh3sgtPGM5m3dxf4
+0001:00005378* __ZN6Xapian20DatabaseOpeningErrorD1Ev$w$JVh3sgtPGM5m3dxf4
+0001:0000544c* __ZTIN6Xapian20DatabaseOpeningErrorE$w$JVh3sgtPGM5m3dxf4
+0001:000052a4* __ZN6Xapian20InvalidArgumentErrorD1Ev$w$JVh3sgtPGM5m3dxf4
+0001:00005458* __ZTIN6Xapian20InvalidArgumentErrorE$w$JVh3sgtPGM5m3dxf4
+0001:00004f32* __ZNSt6vectorISsSaISsEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPSsS1_EERKSs$w$JVh3sgtPGM5m3dxf4
+0001:000051f8* __ZSt24__uninitialized_copy_auxIN9__gnu_cxx17__normal_iteratorIPSsSt6vectorISsSaISsEEEES6_ET0_T_S8_S7_12__false_type$w$JVh3sgtPGM5m3dxf4
+0001:000052a0* __ZNSt15basic_streambufIcSt11char_traitsIcEE13_S_pback_sizeE$w$JVh3sgtPGM5m3dxf4
+0001:000054a0* __ZTSN6Xapian20DatabaseOpeningErrorE$w$JVh3sgtPGM5m3dxf4
+0001:000054cc* __ZTIN6Xapian13DatabaseErrorE$w$JVh3sgtPGM5m3dxf4
+0001:00005480* __ZTSN6Xapian20InvalidArgumentErrorE$w$JVh3sgtPGM5m3dxf4
+0001:000054c0* __ZTIN6Xapian10LogicErrorE$w$JVh3sgtPGM5m3dxf4
+0001:000054f1* __ZTSN6Xapian10LogicErrorE$w$JVh3sgtPGM5m3dxf4
+0001:00005514* __ZTIN6Xapian5ErrorE$w$JVh3sgtPGM5m3dxf4
+0001:000054d8* __ZTSN6Xapian13DatabaseErrorE$w$JVh3sgtPGM5m3dxf4
+0001:00005508* __ZTIN6Xapian12RuntimeErrorE$w$JVh3sgtPGM5m3dxf4
+0001:0000552c* __ZTSN6Xapian12RuntimeErrorE$w$JVh3sgtPGM5m3dxf4
+0001:0000551c* __ZTSN6Xapian5ErrorE$w$JVh3sgtPGM5m3dxf4
+0002:00001c50* __ZN16__Atomicity_lockILi0EE17_S_atomicity_lockE$w$JVh3sgtPGM5m3dxf4
+Module: E:\rd\dse\xapian-core-1.0.2\tests\harness\index_utils.o(harness\index_utils.cc)
+0001:000056ca  __Z20document_from_streamRSi
+0001:00005f40* __Z10munge_termRKSs
+0001:00006302* __Z12C_isnotspacec$w$BtrMTBtPGM5LHIjc3
+0001:00006126* __ZSt7find_ifIN9__gnu_cxx17__normal_iteratorIPcSsEEPFbcEET_S6_S6_T0_St26random_access_iterator_tag$w$BtrMTBtPGM5LHIjc3
+0001:000061f0* __ZSt7find_ifIN9__gnu_cxx17__normal_iteratorIPKcSsEEPFbcEET_S7_S7_T0_St26random_access_iterator_tag$w$BtrMTBtPGM5LHIjc3
+0001:000062ec* __Z9C_isspacec$w$BtrMTBtPGM5LHIjc3
+0001:000062ba* __ZNSsC1IN9__gnu_cxx17__normal_iteratorIPKcSsEEEET_S5_RKSaIcE$w$BtrMTBtPGM5LHIjc3
+0001:00006346* __ZNSs12_S_constructIN9__gnu_cxx17__normal_iteratorIPKcSsEEEEPcT_S6_RKSaIcESt20forward_iterator_tag$w$BtrMTBtPGM5LHIjc3
+0001:000062e8* __ZNSt15basic_streambufIcSt11char_traitsIcEE13_S_pback_sizeE$w$BtrMTBtPGM5LHIjc3
+0002:00001c60* __ZN16__Atomicity_lockILi0EE17_S_atomicity_lockE$w$BtrMTBtPGM5LHIjc3
+Module: E:\rd\dse\xapian-core-1.0.2\tests\harness\unixcmds.o(harness\unixcmds.cc)
+0001:00006432* __Z4cp_RRKSsS0_
+0001:000065f6  __Z5rm_rfRKSs
+0001:00006758* __Z5touchRKSs
+0002:00001c80* __ZN16__Atomicity_lockILi0EE17_S_atomicity_lockE$w$5lJl6JtPGM5YqzeR0
+Module: E:\rd\dse\xapian-core-1.0.2\tests\harness\testsuite.o(harness\testsuite.cc)
+0001:0000727a  __ZN11test_driver10get_srcdirEv
+0001:00007af0* __ZN11test_driverC2EPK9test_desc
+0001:00007b62* __ZN11test_driverC1EPK9test_desc
+0001:00007c5a* __ZN11test_driver7runtestEPK9test_desc
+0001:0000974a* __ZN11test_driver9run_testsEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_
+0001:00009952* __ZN11test_driver12do_run_testsEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_
+0001:00009782* __ZN11test_driver9run_testsEv
+0001:00009f66* __ZN11test_driver5usageEv
+0001:0000a04c* __ZN11test_driver6reportERKNS_6resultERKSs
+0001:0000a202  __ZN11test_driver23add_command_line_optionERKSscPSs
+0001:0000a360  __ZN11test_driver18parse_command_lineEiPPc
+0001:0000a946  __ZN11test_driver3runEPK9test_desc
+0001:0000ab2c* __Z18TEST_EQUAL_DOUBLE_dd
+0002:00001c90  _verbose
+0002:00001c94* _expected_exception
+0002:00001cb0  _tout
+0002:00001e08* __ZN11test_driver4runsE
+0002:00001e0c* __ZN11test_driver5totalE
+0002:00001e18* __ZN11test_driver5argv0E
+0002:00001e1c* __ZN11test_driver8opt_helpE
+0002:00001e20* __ZN11test_driver10short_optsE
+0002:00001e2c* __ZN11test_driver10test_namesE
+0002:00001e38* __ZN11test_driver14abort_on_errorE
+0002:00001e3c* __ZN11test_driver7col_redE
+0002:00001e40* __ZN11test_driver9col_greenE
+0002:00001e44* __ZN11test_driver10col_yellowE
+0002:00001e48* __ZN11test_driver9col_resetE
+0002:00001e4c* __ZN11test_driver6use_crE
+0001:0000b2cc* __ZNSt8_Rb_treeIiSt4pairIKiPSsESt10_Select1stIS3_ESt4lessIiESaIS3_EE8_M_eraseEPSt13_Rb_tree_nodeIS3_E$w$lxLfxmuPGM5PSHen3
+0001:0000b3d0* __ZTVSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE$w$lxLfxmuPGM5PSHen3
+0001:0000b450* __ZTVSt15basic_stringbufIcSt11char_traitsIcESaIcEE$w$lxLfxmuPGM5PSHen3
+0001:0000b3f8* __ZTTSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE$w$lxLfxmuPGM5PSHen3
+0001:0000ac30* __ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEE17_M_stringbuf_initESt13_Ios_Openmode$w$lxLfxmuPGM5PSHen3
+0001:0000712c* __ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEED1Ev$w$lxLfxmuPGM5PSHen3
+0001:0000abb0* __ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_ERKS6_S8_$w$lxLfxmuPGM5PSHen3
+0001:0000ac82* __ZNKSt15basic_stringbufIcSt11char_traitsIcESaIcEE3strEv$w$lxLfxmuPGM5PSHen3
+0001:0000ad40* __ZSt4findIN9__gnu_cxx17__normal_iteratorIPKcSsEEcET_S5_S5_RKT0_St26random_access_iterator_tag$w$lxLfxmuPGM5PSHen3
+0001:0000bb64* __ZTI8TestFail$w$lxLfxmuPGM5PSHen3
+0001:0000bb6c* __ZTI8TestSkip$w$lxLfxmuPGM5PSHen3
+0001:0000bb74* __ZTIN6Xapian5ErrorE$w$lxLfxmuPGM5PSHen3
+0001:0000bb7c* __ZTISs$w$lxLfxmuPGM5PSHen3
+0001:0000add8* __ZNSt8_Rb_treeISsSsSt9_IdentityISsESt4lessISsESaISsEE13insert_uniqueIN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsS4_EEEEEvT_SE_$w$lxLfxmuPGM5PSHen3
+0001:0000aea4* __ZNSt8_Rb_treeISsSsSt9_IdentityISsESt4lessISsESaISsEE4findERKSs$w$lxLfxmuPGM5PSHen3
+0001:0000ae1a* __ZNSt8_Rb_treeISsSsSt9_IdentityISsESt4lessISsESaISsEE8_M_eraseEPSt13_Rb_tree_nodeISsE$w$lxLfxmuPGM5PSHen3
+0001:0000b6ba* __ZNSt8_Rb_treeIiSt4pairIKiPSsESt10_Select1stIS3_ESt4lessIiESaIS3_EE13insert_uniqueERKS3_$w$lxLfxmuPGM5PSHen3
+0001:0000b494* __ZNSt22_Rb_tree_base_iterator12_M_incrementEv$w$lxLfxmuPGM5PSHen3
+0001:0000afb0* __ZNSt8_Rb_treeIiSt4pairIKiPSsESt10_Select1stIS3_ESt4lessIiESaIS3_EE4findERS1_$w$lxLfxmuPGM5PSHen3
+0001:0000b006* __ZNSt6vectorISsSaISsEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPSsS1_EERKSs$w$lxLfxmuPGM5PSHen3
+0001:0000ad12* __ZNSsC1IPcEET_S1_RKSaIcE$w$lxLfxmuPGM5PSHen3
+0001:0000b7b0* __ZNSs12_S_constructIPcEES0_T_S1_RKSaIcESt20forward_iterator_tag$w$lxLfxmuPGM5PSHen3
+0001:0000b858* __ZNSt8_Rb_treeISsSsSt9_IdentityISsESt4lessISsESaISsEE13insert_uniqueERKSs$w$lxLfxmuPGM5PSHen3
+0001:0000b310* __ZSt24__uninitialized_copy_auxIN9__gnu_cxx17__normal_iteratorIPSsSt6vectorISsSaISsEEEES6_ET0_T_S8_S7_12__false_type$w$lxLfxmuPGM5PSHen3
+0001:0000b3b8* __ZNSt15basic_streambufIcSt11char_traitsIcEE13_S_pback_sizeE$w$lxLfxmuPGM5PSHen3
+0001:0000bb58* __ZTISt19basic_ostringstreamIcSt11char_traitsIcESaIcEE$w$lxLfxmuPGM5PSHen3
+0001:0000ba6e* __ZNSt19basic_ostringstreamIcSt11char_traitsIcESaIcEED1Ev$w$lxLfxmuPGM5PSHen3
+0001:0000bad8* __ZNSt19basic_ostringstreamIcSt11char_traitsIcESaIcEED0Ev$w$lxLfxmuPGM5PSHen3
+0001:0000bac8* __ZTv0_n12_NSt19basic_ostringstreamIcSt11char_traitsIcESaIcEED1Ev$w$lxLfxmuPGM5PSHen3
+0001:0000bb3a* __ZTv0_n12_NSt19basic_ostringstreamIcSt11char_traitsIcESaIcEED0Ev$w$lxLfxmuPGM5PSHen3
+0001:0000b410* __ZTCSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE0_So$w$lxLfxmuPGM5PSHen3
+0001:0000bb4c* __ZTISt15basic_stringbufIcSt11char_traitsIcESaIcEE$w$lxLfxmuPGM5PSHen3
+0001:0000b4dc* __ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEED0Ev$w$lxLfxmuPGM5PSHen3
+0001:0000bc1e* __ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEE6setbufEPci$w$lxLfxmuPGM5PSHen3
+0001:0000bd24* __ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEE7seekoffElSt12_Ios_SeekdirSt13_Ios_Openmode$w$lxLfxmuPGM5PSHen3
+0001:0000bf9a* __ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEE7seekposESt4fposI11__mbstate_tESt13_Ios_Openmode$w$lxLfxmuPGM5PSHen3
+0001:0000c158* __ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEE9underflowEv$w$lxLfxmuPGM5PSHen3
+0001:0000c176* __ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEE9pbackfailEi$w$lxLfxmuPGM5PSHen3
+0001:0000c1e2* __ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEE8overflowEi$w$lxLfxmuPGM5PSHen3
+0001:0000b9c8* __ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEE14_M_really_syncEjj$w$lxLfxmuPGM5PSHen3
+0001:0000c3ce* __ZNSt8_Rb_treeIiSt4pairIKiPSsESt10_Select1stIS3_ESt4lessIiESaIS3_EE9_M_insertEPSt18_Rb_tree_node_baseSB_RKS3_$w$lxLfxmuPGM5PSHen3
+0001:0000c37e* __ZNSt22_Rb_tree_base_iterator12_M_decrementEv$w$lxLfxmuPGM5PSHen3
+0001:0000c478* __ZNSt8_Rb_treeISsSsSt9_IdentityISsESt4lessISsESaISsEE9_M_insertEPSt18_Rb_tree_node_baseS7_RKSs$w$lxLfxmuPGM5PSHen3
+0001:0000bbf0* __ZTSSt15basic_stringbufIcSt11char_traitsIcESaIcEE$w$lxLfxmuPGM5PSHen3
+0001:0000bbb0* __ZTSSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE$w$lxLfxmuPGM5PSHen3
+0001:0000bba1* __ZTS8TestFail$w$lxLfxmuPGM5PSHen3
+0001:0000bb97* __ZTS8TestSkip$w$lxLfxmuPGM5PSHen3
+0001:0000bb87* __ZTSN6Xapian5ErrorE$w$lxLfxmuPGM5PSHen3
+0001:0000bb84* __ZTSSs$w$lxLfxmuPGM5PSHen3
+0001:0000c694* __ZNSt8_Rb_treeIiSt4pairIKiPSsESt10_Select1stIS3_ESt4lessIiESaIS3_EE14_M_create_nodeERKS3_$w$lxLfxmuPGM5PSHen3
+0001:0000c58c* __ZSt18_Rb_tree_rebalancePSt18_Rb_tree_node_baseRS0_$w$lxLfxmuPGM5PSHen3
+0001:0000c6c2* __ZNSt8_Rb_treeISsSsSt9_IdentityISsESt4lessISsESaISsEE14_M_create_nodeERKSs$w$lxLfxmuPGM5PSHen3
+0001:0000c72a* __ZSt20_Rb_tree_rotate_leftPSt18_Rb_tree_node_baseRS0_$w$lxLfxmuPGM5PSHen3
+0001:0000c76c* __ZSt21_Rb_tree_rotate_rightPSt18_Rb_tree_node_baseRS0_$w$lxLfxmuPGM5PSHen3
+0002:00001e50* __ZN16__Atomicity_lockILi0EE17_S_atomicity_lockE$w$lxLfxmuPGM5PSHen3
+Module: E:\rd\dse\xapian-core-1.0.2\tests\harness\testutils.o(harness\testutils.cc)
+0001:0000c838* __ZlsRSoRKSt6vectorIjSaIjEE
+0001:0000c9a2* __Z18mset_range_is_sameRKN6Xapian4MSetEjS2_jj
+0001:0000cc28* __Z26mset_range_is_same_weightsRKN6Xapian4MSetEjS2_jj
+0001:0000ce2e* __ZeqRKN6Xapian4MSetES2_
+0001:0000cf12* __Z24mset_expect_order_beginsRKN6Xapian4MSetEjjjjjjjjjjjj
+0001:0000cf84* __Z17mset_expect_orderRKN6Xapian4MSetEjjjjjjjjjjjj
+0001:0000d096* __Z21test_mset_order_equalRKN6Xapian4MSetES2_
+0001:0000e05c* __ZTI8TestFail$w$11AXRJuPGM5SKwoe1
+0001:0000d4e8* __ZNSt15basic_streambufIcSt11char_traitsIcEE13_S_pback_sizeE$w$11AXRJuPGM5SKwoe1
+0001:0000df54* __ZNSt6vectorIjSaIjEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPjS1_EERKj$w$11AXRJuPGM5SKwoe1
+0001:0000e064* __ZTS8TestFail$w$11AXRJuPGM5SKwoe1
+0002:00001ed0* __ZN16__Atomicity_lockILi0EE17_S_atomicity_lockE$w$11AXRJuPGM5SKwoe1
+Module: E:\dev\gcc061\lib\libend.lib(src/libend/386/endlink386.asm)
+0002:00001f80  _end
+0002:00001bf0  _edata
+Module: E:\dev\gcc061\lib\libend.lib(src/libend/386/end.asm)
+0001:0000f0b0* _etext
+0001:0000f0b0* __etext
+0000:00000000* WEAK$ZERO
+0002:00001f80  __end
+0002:00001bf0  __edata
+Module: T:\tmp\ldconv_libgcc_so_d_a_237146afae731923d8.lib(__main.obj)
+0001:0000e0b0* ___do_global_dtors
+0001:0000e0b6* ___do_global_ctors
+0001:0000e0c6* ___POST$__do_global_ctors
+0001:0000e0c8  ___main
+0001:0000e0d2* ___POST$__main
+Module: T:\tmp\ldconv_libgcc_so_d_a_237146afae731923d8.lib(emx-eh.obj)
+0001:0000e0e0  ___ehInit
+0001:0000e109* ___POST$__ehInit
+0001:0000e112* ___ehTerm
+0001:0000e13a* ___POST$__ehTerm
+Module: E:\rd\dse\xapian-core-1.0.2\.libs\getopt.a(common\getopt.cc)
+0001:0000e2dc  __Z20gnu_getopt_internal_iPKPcPKcPK6optionPii
+0002:00001af0  _optind
+0002:00001af4* _opterr
+0002:00001af8* _optopt
+0002:00001f10  _optarg
+0002:00001f14* ___getopt_initialized
+Module: T:\tmp\ldconv_libgcc_so_d_a_237146afae731923d8.lib(emx-ctordtor.obj)
+0001:0000eff0  ___ctordtorInit
+0001:0000effa* ___POST$__ctordtorInit
+0001:0000f01e  ___ctordtorTerm
+0001:0000f028* ___POST$__ctordtorTerm
+
+
+                        +----------------------+
+                        |   Imported Symbols   |
+                        +----------------------+
+
+Symbol                              Module
+======                              ======
+
+___libc_ForkRegisterModule          libc063
+___init_app                         libc063
+__response                          libc063
+__wildcard                          libc063
+__CRT_init                          libc063
+__atfork_callback                   libc063
+__fmode_bin                         libc063
+__ZNSt8ios_base4InitD1Ev            libc063
+__ZN6Xapian4StemD1Ev                xapian10
+__ZNSs4_Rep10_M_destroyERKSaIcE     libc063
+__ZN6Xapian4StemC1Ev                xapian10
+__ZNSs20_S_empty_rep_storageE       libc063
+__ZNSt8ios_base4InitC1Ev            libc063
+__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc libc063
+__ZNSolsEm                          libc063
+__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ libc063
+__ZNSolsEPFRSoS_E                   libc063
+__ZNSs6appendEjc                    libc063
+__ZNK6Xapian4StemclERKSs            xapian10
+__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c libc063
+___cxa_allocate_exception           libc063
+___cxa_throw                        libc063
+__ZNSolsEl                          libc063
+__ZNSs6assignEPKcj                  libc063
+__Unwind_Resume                     libc063
+__ZNSsC1ERKSs                       libc063
+__ZNSs6appendEPKcj                  libc063
+__ZNSs4_Rep11_S_terminalE           libc063
+__ZNSt8ios_baseC2Ev                 libc063
+__ZTTSt14basic_ifstreamIcSt11char_traitsIcEE libc063
+__ZTVSt9basic_iosIcSt11char_traitsIcEE libc063
+__ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E libc063
+__ZTVSt14basic_ifstreamIcSt11char_traitsIcEE libc063
+__ZNSt13basic_filebufIcSt11char_traitsIcEEC1Ev libc063
+__ZNSt13basic_filebufIcSt11char_traitsIcEE4openEPKcSt13_Ios_Openmode libc063
+__ZNKSt12__basic_fileIcE7is_openEv  libc063
+__ZStlsIcSt11char_traitsIcESaIcEERSt13basic_ostreamIT_T0_ES7_RKSbIS4_S5_T1_E libc063
+__ZNSt13basic_filebufIcSt11char_traitsIcEE5closeEv libc063
+__ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate libc063
+__ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc libc063
+__ZSt7getlineIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RSbIS4_S5_T1_ES4_ libc063
+__ZNSs6assignERKSs                  libc063
+__ZTVSt13basic_filebufIcSt11char_traitsIcEE libc063
+__ZNSt12__basic_fileIcED1Ev         libc063
+__ZTVSt15basic_streambufIcSt11char_traitsIcEE libc063
+__ZNSt6localeD1Ev                   libc063
+__ZNSt8ios_baseD2Ev                 libc063
+__ZNSt15basic_streambufIcSt11char_traitsIcEED2Ev libc063
+___cxa_call_unexpected              libc063
+__alloca                            libc063
+__ZN6Xapian4Stem23get_available_languagesEv xapian10
+__ZNSsC1EPKcRKSaIcE                 libc063
+__ZSt4cout                          libc063
+__ZSt20__throw_out_of_rangePKc      libc063
+__ZNSsC1ERKSsjj                     libc063
+__ZN6Xapian4StemC1ERKSs             xapian10
+__ZN6Xapian4StemaSERKS0_            xapian10
+__ZNSs12_M_leak_hardEv              libc063
+__ZNSs6appendERKSs                  libc063
+__ZTVN10__cxxabiv117__class_type_infoE libc063
+___gxx_personality_v0               libc063
+__ZN6Xapian16WritableDatabase12add_documentERKNS_8DocumentE xapian10
+__ZN6Xapian8DocumentD1Ev            xapian10
+___cxa_free_exception               libc063
+__ZNKSs7compareEPKc                 libc063
+__ZN6Xapian8DatabaseC1ERKS0_        xapian10
+__ZN6Xapian16WritableDatabaseD1Ev   xapian10
+__ZN6Xapian8InMemory4openEv         xapian10
+__errno                             libc063
+__ZN6Xapian5Flint4openERKSsii       xapian10
+__ZN6Xapian5Flint4openERKSs         xapian10
+__ZNSt24__default_alloc_templateILb1ELi0EE10deallocateEPvj libc063
+__ZNSs7reserveEj                    libc063
+__ZNSs7replaceEjjPKcj               libc063
+__ZNSt24__default_alloc_templateILb1ELi0EE8allocateEj libc063
+___cxa_begin_catch                  libc063
+___cxa_rethrow                      libc063
+___cxa_end_catch                    libc063
+__ZTVN10__cxxabiv120__si_class_type_infoE libc063
+__ZN6Xapian8DocumentC1Ev            xapian10
+__ZNSs7_M_leakEv                    libc063
+__ZN6Xapian8Document8set_dataERKSs  xapian10
+__ZNSsC1EPKcjRKSaIcE                libc063
+__ZN6Xapian8Document9add_valueEjRKSs xapian10
+__ZN6Xapian8Document11add_postingERKSsjj xapian10
+__ZN6Xapian8Internal6is_tabE        xapian10
+__ZN6Xapian8Internal6lo_tabE        xapian10
+__ZNSs4_Rep9_S_createEjRKSaIcE      libc063
+__ZSt19__throw_logic_errorPKc       libc063
+__ZNSt15basic_streambufIcSt11char_traitsIcEEC2Ev libc063
+__ZNKSs5rfindEcj                    libc063
+__ZNSs6resizeEjc                    libc063
+__Z11file_existsRKSs                xapian10
+__ZTVSo                             libc063
+__ZNK6Xapian5Error15get_descriptionEv xapian10
+__ZNSo5flushEv                      libc063
+__ZNKSs16find_last_not_ofEPKcjj     libc063
+__ZTISo                             libc063
+__ZNSoD1Ev                          libc063
+__ZNSoD0Ev                          libc063
+__ZTv0_n12_NSoD1Ev                  libc063
+__ZTv0_n12_NSoD0Ev                  libc063
+__ZNSt15basic_streambufIcSt11char_traitsIcEE5imbueERKSt6locale libc063
+__ZNSt15basic_streambufIcSt11char_traitsIcEE4syncEv libc063
+__ZNSt15basic_streambufIcSt11char_traitsIcEE9showmanycEv libc063
+__ZNSt15basic_streambufIcSt11char_traitsIcEE6xsgetnEPci libc063
+__ZNSt15basic_streambufIcSt11char_traitsIcEE5uflowEv libc063
+__ZNSt15basic_streambufIcSt11char_traitsIcEE6xsputnEPKci libc063
+__ZdlPv                             libc063
+__ZTISt15basic_streambufIcSt11char_traitsIcEE libc063
+__ZNSt15basic_streambufIcSt11char_traitsIcEE15_M_out_cur_moveEl libc063
+__ZNSs4_Rep11_S_max_sizeE           libc063
+__ZNSt15basic_streambufIcSt11char_traitsIcEE5sputcEc libc063
+__ZNK6Xapian4MSet4sizeEv            xapian10
+__ZNK6Xapian4MSetixEj               xapian10
+__ZNK6Xapian12MSetIteratordeEv      xapian10
+__ZNK6Xapian12MSetIterator10get_weightEv xapian10
+__ZN6Xapian4MSetD1Ev                xapian10
+__ZNK6Xapian4MSet23get_matches_lower_boundEv xapian10
+__ZNK6Xapian4MSet23get_matches_upper_boundEv xapian10
+__ZNK6Xapian4MSet21get_matches_estimatedEv xapian10
+__ZNK6Xapian4MSet16get_max_possibleEv xapian10
+__ZNK6Xapian4MSet5emptyEv           xapian10
+__ZNK6Xapian4MSet5beginEv           xapian10
+__ZNK6Xapian4MSet3endEv             xapian10
+__ZN6Xapian4MSetC1Ev                xapian10
+__ZN6Xapian4MSetaSERKS0_            xapian10
+__ZNK6Xapian4MSet15get_descriptionEv xapian10
+__std_exit                          libc063
+__std_getenv                        libc063
+__std_srand                         libc063
+__std_rand                          libc063
+__std_atoi                          libc063
+___register_frame_table             libc063
+___deregister_frame                 libc063
+__std_stat                          libc063
+__std_mkdir                         libc063
+__std_memcpy                        libc063
+__std_system                        libc063
+__std_open                          libc063
+__std_close                         libc063
+__std_strchr                        libc063
+__std_setjmp                        libc063
+__std_signal                        libc063
+__std_isatty                        libc063
+___stderrp                          libc063
+__std_atexit                        libc063
+__std_log10                         libc063
+__std_ceil                          libc063
+__std_longjmp                       libc063
+__std_memmove                       libc063
+___ctordtorInit1                    libc063
+___ctordtorTerm1                    libc063
+__std_strncmp                       libc063
+__std_fprintf                       libc063
+
+
+                        +--------------------+
+                        |   Libraries Used   |
+                        +--------------------+
+
+E:\rd\dse\xapian-core-1.0.2\.libs\getopt.a
+T:\tmp\ldconv_xapian_a_237146afae7312de60.lib
+E:\dev\gcc061\lib\libc_dll.lib
+E:\dev\gcc061\lib\libc_alias.lib
+T:\tmp\ldconv_libgcc_so_d_a_237146afae731923d8.lib
+E:\dev\gcc061\lib\libend.lib
+
+
+                        +-----------------------+
+                        |   Linker Statistics   |
+                        +-----------------------+
+
+Stack size:  00100000 (1048576.)
+Memory size:  00111030 (1118256.)
+Entry point address: 0001:00000000
+Link time: 00:00.55

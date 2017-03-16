@@ -1,0 +1,3 @@
+<area shape="rect" href="$classXapian_1_1BM25Weight.html" title="BM25 weighting scheme." alt="" coords="6,80,168,107">
+<area shape="rect" href="$classXapian_1_1BoolWeight.html" title="Boolean weighting scheme (everything gets 0)." alt="" coords="192,80,347,107">
+<area shape="rect" href="$classXapian_1_1TradWeight.html" title="Traditional probabilistic weighting scheme." alt="" coords="371,80,526,107">

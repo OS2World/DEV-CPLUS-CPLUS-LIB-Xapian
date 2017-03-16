@@ -1,0 +1,59 @@
+common/getopt.lo common/getopt.o: common/getopt.cc config.h \
+  f:/dev/gcc061/include/stdio.h f:/dev/gcc061/include/sys/cdefs.h \
+  f:/dev/gcc061/include/sys/gnu/cdefs.h f:/dev/gcc061/include/features.h \
+  f:/dev/gcc061/include/sys/_types.h \
+  f:/dev/gcc061/include/machine/_types.h \
+  f:/dev/gcc061/include/386/_types.h common/gnu_getopt.h \
+  f:/dev/gcc061/include/ctype.h f:/dev/gcc061/include/_ctype.h \
+  f:/dev/gcc061/include/c++/3.3.5/cstring \
+  f:/dev/gcc061/include/c++/3.3.5/cstddef f:/dev/gcc061/include/stddef.h \
+  f:/dev/gcc061/include/string.h f:/dev/gcc061/include/strings.h \
+  f:/dev/gcc061/include/c++/3.3.5/cstdlib \
+  f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/c++config.h \
+  f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/os_defines.h \
+  f:/dev/gcc061/include/stdlib.h f:/dev/gcc061/include/sys/_null.h \
+  f:/dev/gcc061/include/malloc.h
+
+config.h:
+
+f:/dev/gcc061/include/stdio.h:
+
+f:/dev/gcc061/include/sys/cdefs.h:
+
+f:/dev/gcc061/include/sys/gnu/cdefs.h:
+
+f:/dev/gcc061/include/features.h:
+
+f:/dev/gcc061/include/sys/_types.h:
+
+f:/dev/gcc061/include/machine/_types.h:
+
+f:/dev/gcc061/include/386/_types.h:
+
+common/gnu_getopt.h:
+
+f:/dev/gcc061/include/ctype.h:
+
+f:/dev/gcc061/include/_ctype.h:
+
+f:/dev/gcc061/include/c++/3.3.5/cstring:
+
+f:/dev/gcc061/include/c++/3.3.5/cstddef:
+
+f:/dev/gcc061/include/stddef.h:
+
+f:/dev/gcc061/include/string.h:
+
+f:/dev/gcc061/include/strings.h:
+
+f:/dev/gcc061/include/c++/3.3.5/cstdlib:
+
+f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/c++config.h:
+
+f:/dev/gcc061/include/c++/3.3.5/i386-pc-os2-emx/bits/os_defines.h:
+
+f:/dev/gcc061/include/stdlib.h:
+
+f:/dev/gcc061/include/sys/_null.h:
+
+f:/dev/gcc061/include/malloc.h:

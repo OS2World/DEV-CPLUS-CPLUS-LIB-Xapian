@@ -1,0 +1,12 @@
+\form#0:\[ \frac{k_{2}.n_{q}}{1+L_{d}}+\sum_{t}\frac{(k_{3}+1)q_{t}}{k_{3}+q_{t}}.\frac{(k_{1}+1)f_{t,d}}{k_{1}((1-b)+bL_{d})+f_{t,d}}.w_{t} \]
+\form#1:$w_{t}$
+\form#2:$f_{t,d}$
+\form#3:$q_{t}$
+\form#4:$L_{d}$
+\form#5:$n_{q}$
+\form#6:$k_{1}$
+\form#7:$k_{2}$
+\form#8:$k_{3}$
+\form#9:$b$
+\form#10:\[ \sum_{t}\frac{f_{t,d}}{k.L_{d}+f_{t,d}}.w_{t} \]
+\form#11:$k$

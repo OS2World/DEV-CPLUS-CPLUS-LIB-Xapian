@@ -1,0 +1,10 @@
+<area shape="rect" href="$database_8h.html" title="Classes for iterating through position lists." alt="" coords="585,208,785,235">
+<area shape="rect" href="$xapian_8h.html" title="API for working with Xapian databases." alt="" coords="1113,335,1247,362">
+<area shape="rect" href="$postingiterator_8h.html" title="Classes for iterating through position lists." alt="" coords="296,158,533,184">
+<area shape="rect" href="$termiterator_8h.html" title="Classes for iterating through position lists." alt="" coords="305,360,524,387">
+<area shape="rect" href="$document_8h.html" title="Classes for iterating through term lists." alt="" coords="583,512,788,539">
+<area shape="rect" href="$enquire_8h.html" title="Classes for iterating through term lists." alt="" coords="591,310,780,336">
+<area shape="rect" href="$query_8h.html" title="Classes for iterating through term lists." alt="" coords="597,360,773,387">
+<area shape="rect" href="$queryparser_8h.html" title="Classes for representing a query." alt="" coords="841,411,1060,438">
+<area shape="rect" href="$valueiterator_8h.html" title="API for working with documents." alt="" coords="839,563,1063,590">
+<area shape="rect" href="$matchspy_8h.html" title="API for running queries." alt="" coords="849,310,1052,336">

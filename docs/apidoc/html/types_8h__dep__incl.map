@@ -1,0 +1,13 @@
+<area shape="rect" href="$database_8h.html" title="typedefs for Xapian" alt="" coords="809,156,1009,183">
+<area shape="rect" href="$xapian_8h.html" title="API for working with Xapian databases." alt="" coords="1337,359,1471,386">
+<area shape="rect" href="$dbfactory_8h.html" title="typedefs for Xapian" alt="" coords="539,308,739,335">
+<area shape="rect" href="$document_8h.html" title="typedefs for Xapian" alt="" coords="807,523,1012,550">
+<area shape="rect" href="$valueiterator_8h.html" title="API for working with documents." alt="" coords="1063,612,1287,639">
+<area shape="rect" href="$enquire_8h.html" title="typedefs for Xapian" alt="" coords="815,359,1004,386">
+<area shape="rect" href="$positioniterator_8h.html" title="typedefs for Xapian" alt="" coords="231,258,471,284">
+<area shape="rect" href="$postingiterator_8h.html" title="Classes for iterating through position lists." alt="" coords="520,106,757,132">
+<area shape="rect" href="$termiterator_8h.html" title="Classes for iterating through position lists." alt="" coords="529,410,748,436">
+<area shape="rect" href="$query_8h.html" title="Classes for iterating through term lists." alt="" coords="821,460,997,487">
+<area shape="rect" href="$termgenerator_8h.html" title="typedefs for Xapian" alt="" coords="233,656,468,683">
+<area shape="rect" href="$matchspy_8h.html" title="API for running queries." alt="" coords="1073,410,1276,436">
+<area shape="rect" href="$queryparser_8h.html" title="Classes for representing a query." alt="" coords="1065,460,1284,487">

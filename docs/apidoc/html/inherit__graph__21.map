@@ -1,0 +1,4 @@
+<area shape="rect" href="$structXapian_1_1ValueRangeProcessor.html" title="Base class for value range processors." alt="" coords="7,56,228,83">
+<area shape="rect" href="$classXapian_1_1DateValueRangeProcessor.html" title="Handle a date range." alt="" coords="311,6,564,32">
+<area shape="rect" href="$classXapian_1_1StringValueRangeProcessor.html" title="Handle a string range." alt="" coords="307,56,568,83">
+<area shape="rect" href="$classXapian_1_1v102_1_1NumberValueRangeProcessor.html" title="Handle a number range." alt="" coords="278,107,598,134">

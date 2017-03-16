@@ -1,0 +1,4 @@
+common/omstringstream.lo common/omstringstream.o:  \
+ common/omstringstream.cc config.h
+
+config.h:
